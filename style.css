@@ -321,7 +321,7 @@ body {
 
 /* Banner */
 .banner {
-  background: url("image/makanan2.jpg") no-repeat center center/cover;
+  background: url("makanan2.jpg") no-repeat center center/cover;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -813,7 +813,7 @@ body {
 }
 
 .layanan-banner {
-  background: url("image/makanan2.jpg") no-repeat center center/cover;
+  background: url("makanan2.jpg") no-repeat center center/cover;
   min-height: 400px; /* ✅ lebih proporsional */
   padding: 60px 20px; /* ✅ beri ruang isi */
   display: flex;
@@ -965,7 +965,7 @@ body {
 }
 
 .contact-banner {
-  background-image: url("image/makanan2.jpg"); /* ganti dengan gambar background kamu */
+  background-image: url("makanan2.jpg"); /* ganti dengan gambar background kamu */
   background-size: cover;
   background-position: center;
   padding: 100px 0;
@@ -1005,7 +1005,7 @@ body {
 
 /* Banner untuk halaman kontak */
 .contact-banner {
-  background: url("image/makanan2.jpg") no-repeat center center/cover;
+  background: url("makanan2.jpg") no-repeat center center/cover;
   height: 300px;
   display: flex;
   align-items: center;
