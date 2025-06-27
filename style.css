@@ -116,10 +116,6 @@ body {
   .nav-links.active {
     display: flex;
   }
-
-  .burger {
-    display: block;
-  }
 }
 
 /* Hero section */
