@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Kami - Rumah Makan Padang Budi&Friends</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <header id="navbar">
+    <div class="logo-container">
+      <img src="image/logo.png" alt="Logo" />
+      <div class="logo-text">
+        <h1>Rumah Makan Padang Budi&Friends</h1>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html" class="active">Tentang Kami</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <div class="burger" id="burger">☰</div>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h1>Tentang Kami</h1>
+    <p>Kenali Lebih Dekat Rumah Makan Padang Budi&Friends</p>
+  </section>
+
+  <section class="tentang-container">
+    <!-- Deskripsi Kiri -->
+<div class="tentang-text">
+  <h2>Tasty Padang Cuisine With Modern Concept</h2>
+
+  <div class="decor-line">
+    <span>🍴</span> <span>🍛</span> <span>🍽️</span>
+  </div>
+
+  <div class="highlight-quote">
+    <p>“Kami lahir dengan konsep yang berani dan modern pada tahun 2024 oleh individu yang berpengalaman selama lebih dari dua dekade di dunia kuliner. Dengan menggabungkan resep klasik dan sentuhan modern, kami menghadirkan hidangan Padang yang tak hanya lezat, tetapi juga menggugah Anda.”</p>
+  </div>
+
+  <p><strong>Rumah Makan Padang Budi&Friends</strong> adalah tempat terbaik untuk menikmati masakan Padang dengan cita rasa asli Minangkabau. Berdiri sejak 2024, kami menghadirkan aneka masakan khas Padang yang dimasak secara tradisional dengan bahan berkualitas tinggi.</p>
+
+  <p>Kami percaya bahwa makanan bukan hanya soal rasa, tapi juga pengalaman dan kehangatan. Oleh karena itu, kami menyajikan menu seperti rendang, ayam pop, gulai tunjang, dendeng balado, dan banyak lagi dengan pelayanan terbaik untuk semua pelanggan.</p>
+
+  <p>Terletak di Srengseng, Kembangan, Jakarta Barat, rumah makan kami menjadi tempat favorit keluarga, pekerja, dan pecinta kuliner untuk menikmati makan siang hingga makan malam.</p>
+
+  <p><strong>Menu Andalan Kami:</strong></p>
+  <ul>
+    <li>Rendang Daging Sapi – Empuk dan kaya bumbu</li>
+    <li>Ayam Pop – Gurih, lembut, dan pas disantap dengan sambal</li>
+    <li>Gulai Kepala Ikan – Kaya rasa dengan kuah kental khas Minang</li>
+    <li>Dendeng Balado – Irisan daging tipis dengan sambal merah pedas</li>
+    <li>Gulai Tunjang – Kikil sapi dengan kuah gulai khas Padang</li>
+    <li>Sayur Nangka, Sambal Ijo, dan Aneka Lauk Pelengkap</li>
+  </ul>
+</div>
+
+
+    <!-- Gambar Kanan -->
+    <div class="tentang-image">
+      <img src="image/promosi.png" alt="Interior Rumah Makan Padang Budi&Friends">
+    </div>
+  </section>
+
+  <footer>
+    <script>
+      const burger = document.getElementById('burger');
+      const navLinks = document.getElementById('navLinks');
+
+      burger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    </script>
+    
+
+    <div class="footer-container">
+      <div class="footer-section">
+        <img src="image/logo.png" alt="Logo Rumah Makan Padang Budi&Friends">
+        <p>© 2024 Rumah Makan Padang Budi&Friends. All Rights Reserved.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Tentang Kami</h3>
+        <p>Kami adalah rumah makan Padang dengan cita rasa autentik dan pelayanan hangat di Jakarta Barat.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Hubungi Kami</h3>
+        <p>📞 089643494243</p>
+        <p>📍 Srengseng, Kembangan, Jakarta Barat</p>
+      </div>
+      <div class="footer-section">
+        <h3>Menu Terbaru</h3>
+        <p>Gulai Tunjang & Dendeng Balado | Mei 2024</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
