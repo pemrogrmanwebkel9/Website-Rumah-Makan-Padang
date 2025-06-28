@@ -972,12 +972,13 @@
 
   .contact-banner {
     background-image: url('makanan2.jpg'); /* ganti dengan gambar background kamu */
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-    position: relative;
-    color:#facc00;
+    height: 300px;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    color: #ffffff;
     text-align: center;
+    position: relative;
   }
 
   .banner-overlay {
