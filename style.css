@@ -93,26 +93,20 @@
 
   /* Burger icon */
   .burger {
-    display: none;
-    font-size: 26px;
-    cursor: pointer;
-    color: #000;
-  }
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #000;
+}
 
   /* Responsive Navbar */
   @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      background-color: #F5AE53;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      width: 100%;
-      text-align: center;
-      padding: 1rem 0;
-      z-index: 999;
-    }
+    .burger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #000;
+}
 
     .nav-links.active {
       display: flex;
@@ -1400,3 +1394,7 @@
   }
 }
 
+.burger::before,
+.burger::after {
+  content: none !important;
+}
