@@ -133,12 +133,17 @@
     </footer>
 
     <script>
-      const burger = document.querySelector(".burger");
-      const navLinks = document.querySelector(".nav-links");
+  document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.getElementById("burger");
+    const navLinks = document.getElementById("navLinks");
 
+    if (burger && navLinks) {
       burger.addEventListener("click", () => {
         navLinks.classList.toggle("active");
       });
-    </script>
+    }
+  });
+</script>
+
   </body>
 </html>
