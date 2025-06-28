@@ -1,78 +1,69 @@
-  /* Reset dan default styling */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #36333A;
-    color: white;
-    padding: 0.9375rem 3.125rem;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #36333A;
+  color: white;
+  padding: 15px 50px;
+  scroll-behavior: smooth;
+}
 
-  /* Navbar styling */
-  #navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #F5AE53;
-    padding: 0.9375rem 3.125rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
-  }
+/* ===== Navbar ===== */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #F5AE53;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
 
-  #navbar.scrolled {
-    background: #F5AE53;
-  }
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
-  /* Logo container */
-  .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
+.logo-container img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 2px solid #000;
+}
 
-  .logo-container img {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    border: 2px solid #000;
-  }
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  color: #111010;
+}
 
-  .logo-text {
-    display: flex;
-    flex-direction: column;
-    color: rgb(17, 16, 16);
-  }
+.logo-text h1 {
+  font-size: 1.375rem;
+  font-weight: bold;
+}
 
-  .logo-text h1 {
-    font-size: 1.375rem;
-    font-weight: bold;
-  }
+.logo-text p {
+  font-size: 1rem;
+  color: #050404;
+}
 
-  .logo-text p {
-    font-size: 1rem;
-    color: #050404;
-  }
-
-  /* Navbar links */
-  .nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    align-items: center;
-  }
-
-  .nav-links li {
-    margin: 0 0.625rem;
-  }
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+}
 
 .nav-links a {
   color: #131212cc;
@@ -81,99 +72,104 @@
   padding: 8px 12px;
   border-radius: 5px;
   transition: background 0.3s, color 0.3s;
-  white-space: nowrap; /* 🛠️ Tambahkan baris ini */
+  white-space: nowrap;
 }
 
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #000;
+  color: #facc00;
+}
 
-  .nav-links a:hover,
-  .nav-links a.active {
-    background-color: #fff;
-    color: #facc00;
+.burger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #F5AE53;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 999;
   }
 
-  /* Burger icon */
+  .nav-links.active {
+    display: flex;
+  }
+
   .burger {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-  color: #000;
-}
-
-  /* Responsive Navbar */
-  @media (max-width: 768px) {
-    .burger {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-  color: #000;
-}
-
-    .nav-links.active {
-      display: flex;
-    }
-
-    .burger {
-      display: block;
-    }
+    display: block;
   }
+}
 
-
-  /* Hero section */
-  .hero {
+/* ===== Hero Section ===== */
+.hero {
   position: relative;
   height: 90vh;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   text-align: center;
+  color: white;
+  overflow: hidden;
 }
 
-.slideshow-container {
+.slideshow-container,
+.slide {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out, transform 8s ease-in-out;
 }
 
 .slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
   opacity: 0;
-  transform: scale(1);
-  animation: zoom 10s ease-in-out infinite;
-  transition: opacity 1s ease-in-out;
+  z-index: 0;
 }
 
 .slide.active {
   opacity: 1;
   z-index: 1;
+  transform: scale(1.1);
 }
 
 @keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
 }
 
 .overlay-text {
   position: relative;
   z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  max-width: 600px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+.overlay-text h1,
+.overlay-text p {
+  color: white;
 }
 
 .cta-button {
-  display: inline-block;
   margin-top: 20px;
   padding: 12px 24px;
   background-color: #facc00;
@@ -182,6 +178,12 @@
   border-radius: 5px;
   font-weight: bold;
 }
+
+/* ===== Responsive Hero & Navbar behavior is already handled above ===== */
+
+/* ===== Section Placeholders (Layanan, Galeri, Footer, etc.) ===== */
+/* Tambahkan bagian lainnya di sini secara modular jika diinginkan */
+
 
 .slide {
   position: absolute;
