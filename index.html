@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,11 +7,15 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <style>
     html {
-      scroll-behavior: smooth;
-    }
+  scroll-behavior: smooth;
+}
+
   </style>
 </head>
 
@@ -38,110 +41,203 @@
   </header>
 
   <section class="hero" id="beranda">
-    <div class="slideshow-container">
-      <div class="slide active" style="background-image: url('image/makanan1.jpg');"></div>
-      <div class="slide" style="background-image: url('image/makanan2.jpg');"></div>
-      <div class="slide" style="background-image: url('image/makanan3.jpg');"></div>
-      <div class="slide" style="background-image: url('image/makanan4.jpg');"></div>
-    </div>
-    <div class="overlay-text">
-      <h1>Selamat Datang di Rumah Makan Padang Budi&Friends</h1>
-      <p>Temukan kelezatan masakan Padang asli dengan resep turun-temurun.</p>
-      <a href="#kontak" class="cta-button">Reservasi Sekarang</a>
-    </div>
-  </section>
+  <div class="slideshow-container">
+    <div class="slide active" style="background-image: url('image/makanan1.jpg');"></div>
+    <div class="slide" style="background-image: url('image/makanan2.jpg');"></div>
+    <div class="slide" style="background-image: url('image/makanan3.jpg');"></div>
+    <div class="slide" style="background-image: url('image/makanan4.jpg');"></div>
+  </div>
+  <div class="overlay-text">
+    <h1>Selamat Datang di Rumah Makan Padang Budi&Friends</h1>
+    <p>Temukan kelezatan masakan Padang asli dengan resep turun-temurun. Kami siap melayani Anda dengan hidangan terbaik khas Minang.</p>
+    <a href="#kontak" class="cta-button">Reservasi Sekarang</a>
+  </div>
+</section>
+
+
+<section class="fitur-utama fade-up">
+  <div class="fitur-card">
+    <i class="fas fa-shield-alt"></i>
+    <h3>Terpercaya</h3>
+    <p>Dipercaya oleh pelanggan sejak 2024</p>
+  </div>
+  <div class="fitur-card">
+    <i class="fas fa-headset"></i>
+    <h3>Layanan 24/7</h3>
+    <p>Siap menerima pesanan kapan saja</p>
+  </div>
+  <div class="fitur-card">
+    <i class="fas fa-award"></i>
+    <h3>Pengalaman</h3>
+    <p>Lebih dari 1 tahun menyajikan rasa khas</p>
+  </div>
+</section>
+
+ <section class="fitur-deskripsi fade-up">
+  <div class="deskripsi-kiri">
+    <p class="subjudul">About</p>
+    <h2>Rumah Makan Padang Budi&Friends</h2>
+    <p>Nikmati sajian khas Minang di tempat kami! Dari rendang, dendeng balado, hingga gulai tunjang, kami siap memanjakan lidah Anda.</p>
+    <p>Kami berlokasi di Srengseng, Kembangan, Jakarta Barat. Tersedia layanan makan di tempat, bawa pulang, dan pesanan online.</p>
+    <a href="#kontak" class="btn-detail">Selengkapnya</a>
+    
+  </div>
+  <div class="gambar-kanan">
+    <img src="image/menu.png" alt="Interior Rumah Makan" />
+  </div>
+</section>
+
+  
 
   <section class="fitur-utama fade-up">
-    <div class="fitur-card">
-      <i class="fas fa-shield-alt"></i>
-      <h3>Terpercaya</h3>
-      <p>Dipercaya oleh pelanggan sejak 2024</p>
-    </div>
-    <div class="fitur-card">
-      <i class="fas fa-headset"></i>
-      <h3>Layanan 24/7</h3>
-      <p>Siap menerima pesanan kapan saja</p>
-    </div>
-    <div class="fitur-card">
-      <i class="fas fa-award"></i>
-      <h3>Pengalaman</h3>
-      <p>Lebih dari 1 tahun menyajikan rasa khas</p>
-    </div>
-  </section>
+  <div class="tentang-container">
+    <!-- Deskripsi Kiri -->
+    <div class="tentang-text">
+      <h2>Tasty Padang Cuisine With Modern Concept</h2>
 
-  <section class="fitur-deskripsi fade-up">
-    <div class="deskripsi-kiri">
-      <p class="subjudul">About</p>
-      <h2>Rumah Makan Padang Budi&Friends</h2>
-      <p>Nikmati sajian khas Minang di tempat kami! Dari rendang, dendeng balado, hingga gulai tunjang.</p>
-      <a href="#kontak" class="btn-detail">Selengkapnya</a>
-    </div>
-    <div class="gambar-kanan">
-      <img src="image/menu.png" alt="Interior Rumah Makan" />
-    </div>
-  </section>
-
-  <section class="galeri-carousel-section" id="galeri">
-    <div class="galeri-deskripsi">
-      <p class="sub-title">Menu Favorit</p>
-      <h2 class="main-title">Galeri Masakan Budi&Friends</h2>
-    </div>
-    <div class="swiper galeri-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="image/rendang.png" alt="Rendang" /><h3>Rendang</h3></div>
-        <div class="swiper-slide"><img src="image/ayam-pop.png" alt="Ayam Pop" /><h3>Ayam Pop</h3></div>
-        <div class="swiper-slide"><img src="image/sayur-nangka.png" alt="Sayur Nangka" /><h3>Sayur Nangka</h3></div>
-        <div class="swiper-slide"><img src="image/kikil.png" alt="Kikil" /><h3>Kikil</h3></div>
-        <div class="swiper-slide"><img src="image/ayam-goreng.png" alt="Ayam Goreng" /><h3>Ayam Goreng</h3></div>
-        <div class="swiper-slide"><img src="image/telur-dadar.png" alt="Telur Dadar" /><h3>Telur Dadar</h3></div>
-        <div class="swiper-slide"><img src="image/tunjang.png" alt="Tunjang" /><h3>Tunjang</h3></div>
-        <div class="swiper-slide"><img src="image/ayam-bakar.png" alt="Ayam Bakar" /><h3>Ayam Bakar</h3></div>
-        <div class="swiper-slide"><img src="image/ikan-bawal-bakar.png" alt="Bawal Bakar" /><h3>Bawal Bakar</h3></div>
-        <div class="swiper-slide"><img src="image/lele-goreng.png" alt="Lele Goreng" /><h3>Lele Goreng</h3></div>
-        <div class="swiper-slide"><img src="image/telur-balado.png" alt="Telur Balado" /><h3>Telur Balado</h3></div>
-        <div class="swiper-slide"><img src="image/udang-balado.png" alt="Udang Balado" /><h3>Udang Balado</h3></div>
+      <div class="decor-line">
+        <span>🍴</span> <span>🍛</span> <span>🍽️</span>
       </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-  </section>
 
-  <section class="galeri-carousel-section" id="kontak">
-    <div class="hubungi-kami">
-      <p class="sub-title">Kontak dan Lokasi</p>
-      <h2 class="main-title">Rumah Makan Padang Budi&Friends</h2>
-    </div>
-    <section class="fitur-utama fade-up">
-      <div class="contact-map-form">
-        <div class="contact-container">
-          <div class="map-embed">
-            <iframe src="https://www.google.com/maps/embed?..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <div class="form-box">
-            <h2>Hubungi Kami</h2>
-            <form>
-              <label for="name">Nama Anda:</label>
-              <input type="text" id="name" name="name" required>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
-              <label for="phone">No. HP:</label>
-              <input type="tel" id="phone" name="phone">
-              <label for="subject">Subjek:</label>
-              <input type="text" id="subject" name="subject">
-              <label for="message">Pesan (Opsional):</label>
-              <textarea id="message" name="message" rows="5"></textarea>
-              <button type="submit">Kirim</button>
-            </form>
-          </div>
-        </div>
+      <div class="highlight-quote">
+        <p>“Kami lahir dengan konsep yang berani dan modern pada tahun 2024 oleh individu yang berpengalaman selama lebih dari dua dekade di dunia kuliner. Dengan menggabungkan resep klasik dan sentuhan modern, kami menghadirkan hidangan Padang yang tak hanya lezat, tetapi juga menggugah Anda.”</p>
       </div>
-    </section>
+
+      <p><strong>Rumah Makan Padang Budi&Friends</strong> adalah tempat terbaik untuk menikmati masakan Padang dengan cita rasa asli Minangkabau. Berdiri sejak 2024, kami menghadirkan aneka masakan khas Padang yang dimasak secara tradisional dengan bahan berkualitas tinggi.</p>
+
+      <p>Kami percaya bahwa makanan bukan hanya soal rasa, tapi juga pengalaman dan kehangatan. Oleh karena itu, kami menyajikan menu seperti rendang, ayam pop, gulai tunjang, dendeng balado, dan banyak lagi dengan pelayanan terbaik untuk semua pelanggan.</p>
+
+      <p>Terletak di Srengseng, Kembangan, Jakarta Barat, rumah makan kami menjadi tempat favorit keluarga, pekerja, dan pecinta kuliner untuk menikmati makan siang hingga makan malam.</p>
+
+      <p><strong>Menu Andalan Kami:</strong></p>
+      <ul>
+        <li>Rendang Daging Sapi – Empuk dan kaya bumbu</li>
+        <li>Ayam Pop – Gurih, lembut, dan pas disantap dengan sambal</li>
+        <li>Gulai Kepala Ikan – Kaya rasa dengan kuah kental khas Minang</li>
+        <li>Dendeng Balado – Irisan daging tipis dengan sambal merah pedas</li>
+        <li>Gulai Tunjang – Kikil sapi dengan kuah gulai khas Padang</li>
+        <li>Sayur Nangka, Sambal Ijo, dan Aneka Lauk Pelengkap</li>
+      </ul>
+    </div>
+
+    <!-- Gambar Kanan -->
+    <div class="tentang-image">
+      <img src="image/promosi.png" alt="Interior Rumah Makan Padang Budi&Friends" />
+    </div>
+  </div>
+</section>
+
+<section class="galeri-carousel-section" id="galeri">
+  <div class="galeri-deskripsi">
+    <p class="sub-title">Menu Favorit</p>
+    <h2 class="main-title">Galeri Masakan Budi&Friends</h2>
+  </div>
+
+  <!-- Swiper Container -->
+  <div class="swiper galeri-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="image/rendang.png" alt="Rendang" />
+        <h3>Rendang</h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="image/ayam pop.png" alt="Ayam Pop" />
+        <h3>Ayam Pop</h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="image/sayur nangka.png" alt="Sayur Nangka" />
+        <h3>Sayur Nangka</h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="image/kikil.png" alt="Kikil" />
+        <h3>Kikil</h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="image/ayam goreng.png" alt="Ayam Goreng" />
+        <h3>Ayam Goreng</h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="image/telur dadar.png" alt="Telur Dadar" />
+        <h3>Telur Dadar</h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="image/tunjang.png" alt="Tunjang" />
+        <h3>Tunjang</h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="image/ayam bakar.png" alt="Ayam Bakar" />
+        <h3>Ayam Bakar</h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="image/ikan bawal bakar.png" alt="Bawal Bakar" />
+        <h3>Bawal Bakar</h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="image/lele goreng.png" alt="Lele Goreng" />
+        <h3>Lele Goreng</h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="image/telur balado.png" alt="Telur Balado" />
+        <h3>Telur Balado</h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="image/udang balado.png" alt="Udang Balado" />
+        <h3>Udang Balado</h3>
+      </div>
+    </div>
+
+    <!-- Tombol panah Swiper -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<section class="galeri-carousel-section" id="galeri">
+  <div class="Hubungi kami">
+    <p class="sub-title">Kontak dan Lokasi</p>
+    <h2 class="main-title">Rumah Makan Padang Budi&FriendsBudi&Friends</h2>
+  </div>
+<section class="fitur-utama fade-up">
+  <div class="contact-map-form">
+    <div class="contact-container">
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.323724364276!2d106.7531540750527!3d-6.222882660937485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f74f2aa81a2f%3A0xd8d8a6e922eeb0a!2sJl.%20Srengseng%20Raya%20No.56%2C%20RT.1%2FRW.2%2C%20Srengseng%2C%20Kec.%20Kembangan%2C%20Kota%20Jakarta%20Barat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2011630!5e0!3m2!1sid!2sid!4v1717525478483!5m2!1sid!2sid"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="form-box">
+        <h2>Hubungi Kami</h2>
+        <form>
+          <label for="name">Nama Anda:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">No. HP:</label>
+          <input type="tel" id="phone" name="phone">
+
+          <label for="subject">Subjek:</label>
+          <input type="text" id="subject" name="subject">
+
+          <label for="message">Pesan (Opsional):</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </div>
+  </div>
   </section>
+</section>
 
   <footer>
     <div class="footer-container">
       <div class="footer-section">
-        <img src="image/logo.png" alt="Logo Rumah Makan" />
+        <img src="image/logo.png" alt="Logo Rumah Makan Padang Budi&Friends" />
         <p>© 2024 Rumah Makan Padang Budi&Friends. All Rights Reserved.</p>
       </div>
       <div class="footer-section">
@@ -160,37 +256,66 @@
     </div>
   </footer>
 
-  <script>
-    const burger = document.querySelector('.burger');
-    const navLinks = document.querySelector('.nav-links');
-    burger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".galeri-swiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      loop: true,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 2,
-        },
-        480: {
-          slidesPerView: 1,
-        },
-      },
-    });
-  </script>
-</body>
+<script>
+  const burger = document.querySelector('.burger');
+  const navLinks = document.querySelector('.nav-links');
 
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    setInterval(() => {
+      slides[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % slides.length;
+      slides[currentIndex].classList.add('active');
+    }, 3000);
+  });
+</script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".galeri-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      480: {
+        slidesPerView: 1,
+      }
+    }
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+  });
+</script>
+
+</body>
 </html>
