@@ -2,10 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const burger = document.getElementById("burger");
   const navLinks = document.getElementById("navLinks");
 
-  burger.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
-  });
+  if (burger && navLinks) {
+    burger.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+    });
+  } else {
+    console.warn("Elemen burger atau navLinks tidak ditemukan di halaman ini.");
+  }
 });
+
 
 // Efek muncul dari bawah saat discroll
 const menuItems = document.querySelectorAll('.menu-item');
