@@ -1027,6 +1027,9 @@
 .contact-banner .banner-overlay p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Bayangan hitam transparan */
   color: #ffffff !important; /* Pastikan tetap putih */
+  /* Tambahan untuk posisi turun ke bawah */
+  position: relative;
+  top: 30px; /* Geser ke bawah sekitar 30px */
 }
 
   }
